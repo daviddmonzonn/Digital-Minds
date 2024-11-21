@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) [2024] [DigitalMinds]
+Copyright (c) 2024 Digital Minds
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -20,13 +20,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-
-sales = [
-  {"product": "Socks", "quantity": 5, "unit_price": 15.99},
-  {"product": "Pants", "quantity": 3, "unit_price": 36.50},
-  {"product": "Shirt", "quantity": 6, "unit_price": 15.99},
-  {"product": "Shoes", "quantity": 2, "unit_price": 78.00}
-]
 
 def analyze_sales(sales):
   sales_summary = {}
@@ -50,6 +43,12 @@ def analyze_sales(sales):
   return sales_summary, total_incomes, best_selling_product
 
 if __name__ == "__main__":
+  sales = [
+  {"product": "Socks", "quantity": 5, "unit_price": 15.99},
+  {"product": "Pants", "quantity": 3, "unit_price": 36.50},
+  {"product": "Shirt", "quantity": 6, "unit_price": 15.99},
+  {"product": "Shoes", "quantity": 2, "unit_price": 78.00}
+]
   summary, total_income, best_seller = analyze_sales(sales)
   print("Sales summary:")
   for product, data in summary.items():
